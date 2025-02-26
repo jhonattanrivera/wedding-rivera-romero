@@ -111,7 +111,7 @@
 
 .navbar .navbar-nav .nav-link {
     padding: 10px 15px;
-    font-family: 'Petit Formal Script', cursive;
+    /*font-family: 'Petit Formal Script', cursive;*/
     font-weight: 600;
     font-size: 16px;
     transition: .5s;
@@ -241,7 +241,8 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/wedding-date-bg.jpg) center;
+    /*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/wedding-date-bg.jpg) center;*/
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     object-fit: cover;
     background-repeat: no-repeat;
 }
@@ -440,3 +441,45 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+
+/*** CUSTOM ***/
+.img-custom {
+    width: 100%;
+    max-width: 150px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción original */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Opcional */
+}
+
+/* Ajustes en vista móvil */
+@media (max-width: 768px) {
+    .img-custom {
+        width: auto; /* Permite que la imagen se ajuste sin estirarse */
+        max-width: 40%; /* Evita que se haga demasiado grande */
+        height: auto; /* Mantiene la proporción */
+    }
+}
+
+.img-custom-2 {
+    width: 100%;
+    max-width: 250px; /* Controlamos el ancho máximo */
+    height: 180px; /* Todas las imágenes tendrán la misma altura */
+    aspect-ratio: 16 / 9; /* Fuerza una proporción más horizontal */
+    object-fit: cover; /* Recorta los bordes sin deformar */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+    .img-custom-2 {
+        max-width: 90%; /* Se amplía un poco el ancho en móviles */
+        height: auto; /* Mantiene la proporción */
+        max-height: 200px; /* Evita que sean demasiado grandes */
+        aspect-ratio: 16 / 10; /* Ligera variación para mejorar en pantallas pequeñas */
+    }
+}
