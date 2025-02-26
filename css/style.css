@@ -515,7 +515,12 @@
 #rsvpForm select,
 #rsvpForm textarea {
     color: #000;
-    /* Negro */
+}
+
+#rsvpForm input:disabled,
+#rsvpForm textarea:disabled,
+#rsvpForm select:disabled {
+    background-color: #e9ecef !important;
 }
 
 #rsvpForm input::placeholder,
