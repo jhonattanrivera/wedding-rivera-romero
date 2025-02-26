@@ -1,17 +1,17 @@
-
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .8s ease-out, visibility 0s linear .5s;
     z-index: 99999;
- }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
+
 /*** Spinner End ***/
 
 .back-to-top {
@@ -129,13 +129,13 @@
         border-top: none !important;
     }
 }
+
 /*** Navbar End ***/
 
 /*** Carousel Start ***/
 .carousel-item {
     position: relative;
     min-height: 100vh
-    
 }
 
 .carousel-item img {
@@ -188,6 +188,7 @@
     border-right: 15px solid var(--bs-primary);
     border-left: 15px solid var(--bs-primary);
 }
+
 /*** Carousel End ***/
 
 
@@ -228,12 +229,14 @@
 }
 
 @media (max-width: 768px) {
+
     .story .story-timeline::before,
     .story .story-timeline::after,
-    .story .story-timeline .row::after  {
+    .story .story-timeline .row::after {
         display: none;
     }
 }
+
 /*** Wedding Story End ***/
 
 /*** Wedding Date Start ***/
@@ -262,6 +265,7 @@
     position: relative;
     z-index: 9;
 }
+
 /*** Wedding Date End ***/
 
 
@@ -271,6 +275,7 @@
         display: none;
     }
 }
+
 /*** Wedding Timeline End ***/
 
 
@@ -322,12 +327,13 @@
     transition: 0.5s;
     opacity: 0;
     z-index: 2;
-    
+
 }
 
 .gallery .gallery-img:hover .search-icon {
     opacity: 1;
 }
+
 /*** Gallery End ***/
 
 
@@ -394,6 +400,7 @@
 .team .team-item:hover .team-img .team-img-bg img {
     transform: scale(1.1);
 }
+
 /*** Team End ***/
 
 
@@ -402,6 +409,7 @@
     background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2));
     object-fit: cover;
 }
+
 /*** Contact Us End ***/
 
 
@@ -426,12 +434,14 @@
 }
 
 @media (max-width: 992px) {
+
     .footer .text-start,
     .footer .text-center,
     .footer .text-end {
         text-align: center !important;
     }
 }
+
 /*** Footer End ***/
 
 
@@ -440,35 +450,47 @@
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark) !important;
 }
+
 /*** copyright end ***/
 
 
 /*** CUSTOM ***/
 .img-custom {
     width: 100%;
-    max-width: 150px; /* Tamaño máximo de la imagen */
-    height: auto; /* Mantiene la proporción original */
-    object-fit: cover; /* Evita que la imagen se deforme */
+    max-width: 150px;
+    /* Tamaño máximo de la imagen */
+    height: auto;
+    /* Mantiene la proporción original */
+    object-fit: cover;
+    /* Evita que la imagen se deforme */
     display: block;
     margin: 0 auto;
-    border-radius: 8px; /* Opcional */
+    border-radius: 8px;
+    /* Opcional */
 }
 
 /* Ajustes en vista móvil */
 @media (max-width: 768px) {
     .img-custom {
-        width: auto; /* Permite que la imagen se ajuste sin estirarse */
-        max-width: 40%; /* Evita que se haga demasiado grande */
-        height: auto; /* Mantiene la proporción */
+        width: auto;
+        /* Permite que la imagen se ajuste sin estirarse */
+        max-width: 40%;
+        /* Evita que se haga demasiado grande */
+        height: auto;
+        /* Mantiene la proporción */
     }
 }
 
 .img-custom-2 {
     width: 100%;
-    max-width: 250px; /* Controlamos el ancho máximo */
-    height: 180px; /* Todas las imágenes tendrán la misma altura */
-    aspect-ratio: 16 / 9; /* Fuerza una proporción más horizontal */
-    object-fit: cover; /* Recorta los bordes sin deformar */
+    max-width: 250px;
+    /* Controlamos el ancho máximo */
+    height: 180px;
+    /* Todas las imágenes tendrán la misma altura */
+    aspect-ratio: 16 / 9;
+    /* Fuerza una proporción más horizontal */
+    object-fit: cover;
+    /* Recorta los bordes sin deformar */
     display: block;
     margin: 0 auto;
     border-radius: 8px;
@@ -477,10 +499,14 @@
 /* Media query para móviles */
 @media (max-width: 768px) {
     .img-custom-2 {
-        max-width: 90%; /* Se amplía un poco el ancho en móviles */
-        height: auto; /* Mantiene la proporción */
-        max-height: 200px; /* Evita que sean demasiado grandes */
-        aspect-ratio: 16 / 10; /* Ligera variación para mejorar en pantallas pequeñas */
+        max-width: 90%;
+        /* Se amplía un poco el ancho en móviles */
+        height: auto;
+        /* Mantiene la proporción */
+        max-height: 200px;
+        /* Evita que sean demasiado grandes */
+        aspect-ratio: 16 / 10;
+        /* Ligera variación para mejorar en pantallas pequeñas */
     }
 }
 
@@ -488,21 +514,26 @@
 #rsvpForm input,
 #rsvpForm select,
 #rsvpForm textarea {
-    color: #000; /* Negro */
+    color: #000;
+    /* Negro */
 }
 
 #rsvpForm input::placeholder,
 #rsvpForm textarea::placeholder {
-    color: #666; /* Gris oscuro para los placeholders */
+    color: #666;
+    /* Gris oscuro para los placeholders */
 }
 
 #submitBtn {
-    color: #fff; /* Blanco */
-    background-color: var(--bs-primary); /* Color de fondo del botón */
+    color: #fff;
+    /* Blanco */
+    background-color: var(--bs-primary);
+    /* Color de fondo del botón */
 }
 
 #submitBtn:disabled {
-    background-color: #ccc; /* Gris claro cuando el botón está deshabilitado */
+    background-color: #ccc;
+    /* Gris claro cuando el botón está deshabilitado */
 }
 
 /* Loader */
@@ -525,18 +556,20 @@
 }
 
 #responseMessage {
-    color: #333;                /* Color de texto oscuro */
+    color: #333;
+    /* Color de texto oscuro */
     transition: all 0.3s ease-in-out;
 }
 
-.modal-content{
-    border-radius: 8px; /* Opcional */
+.modal-content {
+    border-radius: 8px;
+    /* Opcional */
 }
 
-.modal-header{
-    border-bottom:rgba(255, 255, 255, 0.8);
+.modal-header {
+    border-bottom: rgba(255, 255, 255, 0.8);
 }
 
-.modal-footer{
-    border-top:rgba(255, 255, 255, 0.8);
+.modal-footer {
+    border-top: rgba(255, 255, 255, 0.8);
 }
